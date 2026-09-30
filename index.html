@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Crypto Fraud Attribution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">[P]</div>
+          <div>
+            <div class="brand-name">[Product Name]</div>
+            <div class="brand-meta">CIS / SIH 2026 / PS 26183</div>
+          </div>
+        </div>
+
+        <nav class="nav-panel">
+          <button class="nav-item active" data-screen="overview">Case Overview</button>
+          <button class="nav-item" data-screen="trace">Multi-Chain Trace</button>
+          <button class="nav-item" data-screen="cluster">VASP Cluster View</button>
+          <button class="nav-item" data-screen="risk">Risk & Explainability</button>
+          <button class="nav-item" data-screen="alerts">Alert Feed</button>
+          <button class="nav-item" data-screen="report">Report Generator</button>
+          <button class="nav-item" data-screen="vasp">VASP Tracker</button>
+          <button class="nav-item" data-screen="mobile">Mobile Officer View</button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="status-line">
+            <span class="status-dot"></span>
+            Live LEA Feed
+          </div>
+          <small>Queue: 24 active investigations</small>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">Real-Time Crypto Fraud Attribution</div>
+            <h1>Case Dashboard</h1>
+          </div>
+          <div class="topbar-actions">
+            <div class="pill status-live">Operational</div>
+            <button class="ghost-btn">Export</button>
+          </div>
+        </header>
+
+        <section class="screen active" data-screen="overview">
+          <div class="hero-grid">
+            <div class="hero-card main-case">
+              <div class="case-header-row">
+                <div>
+                  <div class="eyebrow muted">Case ID / NCRP-26183-052</div>
+                  <h2>Wallet Cluster: 0x7B2...4A13 / bc1q... / TQJ...</h2>
+                </div>
+                <span class="badge synced">Synced from NCRP</span>
+              </div>
+
+              <div class="case-summary">
+                <div>
+                  <label>Complaint Status</label>
+                  <strong>Received from SAHYOG + NCRP</strong>
+                </div>
+                <div>
+                  <label>Primary Wallet</label>
+                  <strong>0x7B2F...4A13</strong>
+                </div>
+                <div>
+                  <label>Risk Grade</label>
+                  <strong class="text-critical">Critical</strong>
+                </div>
+                <div>
+                  <label>ML Confidence</label>
+                  <strong>96% (High confidence)</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card compact">
+              <div class="metric-header">Cash-out Countdown</div>
+              <div class="countdown">03:14:52</div>
+              <div class="subline">Estimated fiat exit window</div>
+              <div class="mini-legend">
+                <span><i class="dot amber"></i> Peel-chain velocity: 74%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card critical">
+              <div class="stat-topline">Wallet Risk</div>
+              <div class="stat-value">Critical</div>
+              <div class="stat-foot">Sanctions + mixer + peel-chain</div>
+            </article>
+            <article class="stat-card info">
+              <div class="stat-topline">Cross-Case Matches</div>
+              <div class="stat-value">8</div>
+              <div class="stat-foot">National NCRP complaints linked</div>
+            </article>
+            <article class="stat-card warning">
+              <div class="stat-topline">VASP Matches</div>
+              <div class="stat-value">4</div>
+              <div class="stat-foot">Custodial clusters identified</div>
+            </article>
+            <article class="stat-card success">
+              <div class="stat-topline">Freeze Requests</div>
+              <div class="stat-value">6 / 9</div>
+              <div class="stat-foot">Pending / responded</div>
+            </article>
+          </div>
+
+          <div class="content-grid two-col">
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Wallet Intake Queue</h3>
+                <span class="badge neutral">Synced from NCRP</span>
+              </div>
+
+              <div class="complaint-list">
+                <div class="complaint-item">
+                  <div class="complaint-main">
+                    <strong>0x7B2F...4A13</strong>
+                    <small>BTC deposit / ETH swap / TRC-20 fan-out</small>
+                  </div>
+                  <div class="complaint-meta">
+                    <span class="badge danger">Critical</span>
+                    <span class="badge synced small">Synced from NCRP</span>
+                  </div>
+                </div>
+                <div class="complaint-item">
+                  <div class="complaint-main">
+                    <strong>bc1q3...8kp</strong>
+                    <small>Peel wallet / mixer relay indicator</small>
+                  </div>
+                  <div class="complaint-meta">
+                    <span class="badge warning">High</span>
+                    <span class="badge synced small">Synced from NCRP</span>
+                  </div>
+                </div>
+                <div class="complaint-item">
+                  <div class="complaint-main">
+                    <strong>TQJ8N...Y21A</strong>
+                    <small>TRC-20 USDT transfer to VASP</small>
+                  </div>
+                  <div class="complaint-meta">
+                    <span class="badge critical">Critical</span>
+                    <span class="badge synced small">Synced from NCRP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h3>National Cross-Case Clustering</h3>
+                <span class="badge info">Linked by wallet hash</span>
+              </div>
+
+              <div class="cluster-list">
+                <div class="cluster-row">
+                  <span>Complaint 19-402</span>
+                  <strong>Delhi</strong>
+                  <em>Matched 1 wallet</em>
+                </div>
+                <div class="cluster-row">
+                  <span>Complaint 21-091</span>
+                  <strong>Mumbai</strong>
+                  <em>Matched 3 wallets</em>
+                </div>
+                <div class="cluster-row">
+                  <span>Complaint 28-778</span>
+                  <strong>Bengaluru</strong>
+                  <em>Matched 2 wallets</em>
+                </div>
+                <div class="cluster-row">
+                  <span>Complaint 31-104</span>
+                  <strong>Hyderabad</strong>
+                  <em>Matched 2 wallets</em>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="trace">
+          <div class="panel full-panel">
+            <div class="panel-header">
+              <h3>Multi-Chain Trace Graph</h3>
+              <div class="legend-row">
+                <span><i class="node-legend btc"></i> BTC</span>
+                <span><i class="node-legend eth"></i> ETH</span>
+                <span><i class="node-legend trc"></i> TRC-20</span>
+                <span><i class="node-legend defi"></i> DeFi</span>
+                <span><i class="node-legend mixer"></i> Mixer</span>
+                <span><i class="node-legend bridge"></i> Bridge</span>
+              </div>
+            </div>
+
+            <div class="trace-graph-wrap">
+              <svg viewBox="0 0 1100 520" class="trace-svg" aria-label="Crypto trace graph">
+                <defs>
+                  <linearGradient id="flowGrad" x1="0%" x2="100%">
+                    <stop offset="0%" stop-color="#3fd0ff" stop-opacity="0.7" />
+                    <stop offset="100%" stop-color="#ff5d70" stop-opacity="0.7" />
+                  </linearGradient>
+                </defs>
+
+                <path d="M120 160 C200 120, 280 110, 360 170 S540 260, 620 220 S820 120, 960 180" class="edge edge-main" />
+                <path d="M360 170 C440 240, 500 320, 620 220" class="edge edge-mixer" />
+                <path d="M620 220 C700 200, 760 260, 820 300" class="edge edge-defi" />
+                <path d="M820 300 C900 310, 960 320, 1030 260" class="edge edge-bridge" />
+                <path d="M360 170 C430 90, 530 60, 620 110" class="edge edge-suspect" />
+
+                <g class="node btc" transform="translate(120 160)">
+                  <circle r="20" />
+                  <text>BTC</text>
+                </g>
+
+                <g class="node wallet" transform="translate(360 170)">
+                  <circle r="24" />
+                  <text>W1</text>
+                </g>
+
+                <g class="node mixer" transform="translate(620 220)">
+                  <circle r="22" />
+                  <text>MIX</text>
+                </g>
+
+                <g class="node defi" transform="translate(820 300)">
+                  <circle r="22" />
+                  <text>DEX</text>
+                </g>
+
+                <g class="node bridge" transform="translate(1030 260)">
+                  <circle r="23" />
+                  <text>BR</text>
+                </g>
+
+                <g class="node eth" transform="translate(610 110)">
+                  <circle r="18" />
+                  <text>ETH</text>
+                </g>
+
+                <g class="node trc" transform="translate(880 120)">
+                  <circle r="18" />
+                  <text>TRC</text>
+                </g>
+
+                <g class="node wallet" transform="translate(210 320)">
+                  <circle r="18" />
+                  <text>W2</text>
+                </g>
+
+                <g class="node wallet" transform="translate(470 360)">
+                  <circle r="18" />
+                  <text>W3</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="cluster">
+          <div class="panel full-panel">
+            <div class="panel-header">
+              <h3>Exchange / VASP Clustering View</h3>
+              <span class="badge danger">4 custodial clusters identified</span>
+            </div>
+
+            <div class="cluster-grid">
+              <div class="cluster-box">
+                <div class="cluster-title">Binance Custodial Cluster</div>
+                <ul>
+                  <li>0x7B2F...4A13</li>
+                  <li>bc1q3...8kp</li>
+                  <li>0x97BA...14C1</li>
+                </ul>
+                <div class="cluster-score">Cluster risk: 92%</div>
+              </div>
+
+              <div class="cluster-box">
+                <div class="cluster-title">Coinbase / Prime</div>
+                <ul>
+                  <li>0xC8F2...B661</li>
+                  <li>0xA121...1A4D</li>
+                </ul>
+                <div class="cluster-score">Cluster risk: 69%</div>
+              </div>
+
+              <div class="cluster-box">
+                <div class="cluster-title">Huobi / OTC Layer</div>
+                <ul>
+                  <li>TRC wallet: TQJ8N...Y21A</li>
+                  <li>remote cash-out alias</li>
+                </ul>
+                <div class="cluster-score">Cluster risk: 81%</div>
+              </div>
+
+              <div class="cluster-box">
+                <div class="cluster-title">Unhosted / unknown</div>
+                <ul>
+                  <li>Bridge-bound wallet</li>
+                  <li>mixer relay</li>
+                </ul>
+                <div class="cluster-score">Cluster risk: 94%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="risk">
+          <div class="content-grid two-col risk-layout">
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Risk Categorization</h3>
+                <span class="badge danger">Critical</span>
+              </div>
+
+              <div class="risk-score-box">
+                <div class="risk-number">96</div>
+                <div class="risk-copy">
+                  <strong>ML Confidence</strong>
+                  <span>Behavioral + sanctions + chain attribution + cluster overlap</span>
+                </div>
+              </div>
+
+              <div class="risk-badges">
+                <span class="risk-pill high">Mixer signature</span>
+                <span class="risk-pill high">Sanctions match</span>
+                <span class="risk-pill high">Peel-chain</span>
+                <span class="risk-pill high">Bridge crossing</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Risk Explainability Panel</h3>
+                <span class="badge info">Court-defensible rationale</span>
+              </div>
+
+              <ul class="explainability-list">
+                <li>
+                  <strong>Mixer signature</strong>
+                  <span>Wallet activity matches known tumbler relay pattern with 2.7x fee spikes.</span>
+                </li>
+                <li>
+                  <strong>Sanctions overlay</strong>
+                  <span>Hash intersects a sanctioned entity cluster from an earlier flagged import.</span>
+                </li>
+                <li>
+                  <strong>Peel-chain velocity</strong>
+                  <span>Rapid 3-hop dispersion to low-risk wallets indicates cash-out prep.</span>
+                </li>
+                <li>
+                  <strong>Cross-case overlap</strong>
+                  <span>Same wallet address appears in 8 NCRP complaints nationally.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="alerts">
+          <div class="panel full-panel">
+            <div class="panel-header">
+              <h3>Automated Alert Feed</h3>
+              <button class="ghost-btn small">Acknowledge All</button>
+            </div>
+
+            <div class="alert-list">
+              <div class="alert-item critical">
+                <div class="alert-icon">!</div>
+                <div class="alert-copy">
+                  <strong>New laundering hop detected</strong>
+                  <span>ETH → DEX → mixer relay to Binance cluster within 11 minutes.</span>
+                </div>
+                <time>2 min ago</time>
+              </div>
+              <div class="alert-item warning">
+                <div class="alert-icon">△</div>
+                <div class="alert-copy">
+                  <strong>Wallet-to-VASP match</strong>
+                  <span>Known Binance hot wallet repeated transfer pattern with complaint wallet.</span>
+                </div>
+                <time>6 min ago</time>
+              </div>
+              <div class="alert-item info">
+                <div class="alert-icon">✓</div>
+                <div class="alert-copy">
+                  <strong>Freeze request acknowledged</strong>
+                  <span>Coinbase responded with KYC match and placed hold on 2 addresses.</span>
+                </div>
+                <time>18 min ago</time>
+              </div>
+              <div class="alert-item critical">
+                <div class="alert-icon">#</div>
+                <div class="alert-copy">
+                  <strong>Cross-case cluster update</strong>
+                  <span>Same wallet linked to 3 additional NCRP complaints in the national ledger.</span>
+                </div>
+                <time>29 min ago</time>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="report">
+          <div class="panel full-panel report-panel">
+            <div class="panel-header">
+              <h3>Generate Investigation Report</h3>
+              <span class="badge synced">Section 65B ready</span>
+            </div>
+
+            <div class="report-grid">
+              <div class="report-card">
+                <div class="report-title">Case Packet Summary</div>
+                <ul>
+                  <li>Wallet hashes attributed to one operational cluster</li>
+                  <li>Chain-of-custody timeline extracted</li>
+                  <li>VASP coordination status included</li>
+                </ul>
+              </div>
+              <div class="report-card">
+                <div class="report-title">Evidence Attachments</div>
+                <ul>
+                  <li>Trace screenshots</li>
+                  <li>seer / ledger export</li>
+                  <li>freeze request logs</li>
+                </ul>
+              </div>
+              <div class="report-card action-card">
+                <div class="report-title">Ready for Court Filing</div>
+                <button class="primary-btn">Generate Investigation Report</button>
+                <small>Auto-populates standardized Section 65B format</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="vasp">
+          <div class="panel full-panel">
+            <div class="panel-header">
+              <h3>VASP Coordination Tracker</h3>
+              <span class="badge neutral">Pending / responded / escalated</span>
+            </div>
+
+            <div class="tracker-table-wrap">
+              <table class="tracker-table">
+                <thead>
+                  <tr>
+                    <th>Exchange</th>
+                    <th>Wallets matched</th>
+                    <th>Status</th>
+                    <th>Freeze request</th>
+                    <th>Response</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Binance</td>
+                    <td>08</td>
+                    <td><span class="status-chip pending">Pending</span></td>
+                    <td>Sent 08:12</td>
+                    <td>Awaiting acknowledgement</td>
+                  </tr>
+                  <tr>
+                    <td>Coinbase</td>
+                    <td>03</td>
+                    <td><span class="status-chip responded">Responded</span></td>
+                    <td>Sent 07:45</td>
+                    <td>2 addresses placed on hold</td>
+                  </tr>
+                  <tr>
+                    <td>Huobi</td>
+                    <td>04</td>
+                    <td><span class="status-chip escalated">Escalated</span></td>
+                    <td>Sent 06:05</td>
+                    <td>Legal follow-up required</td>
+                  </tr>
+                  <tr>
+                    <td>OKX</td>
+                    <td>02</td>
+                    <td><span class="status-chip pending">Pending</span></td>
+                    <td>Sent 05:11</td>
+                    <td>Awaiting compliance review</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="mobile">
+          <div class="mobile-shell">
+            <div class="phone-frame">
+              <div class="phone-header">
+                <span class="camera"></span>
+                <strong>Field Officer</strong>
+              </div>
+
+              <div class="phone-card main-warning">
+                <div class="mini-pill">Verdict</div>
+                <h4>High Risk / Likely Laundering</h4>
+                <p>Wallet shows mixer + rapid peel-chain + VASP transfer behavior.</p>
+              </div>
+
+              <div class="phone-card">
+                <label>Wallet Input</label>
+                <div class="wallet-input">0x7B2F...4A13</div>
+                <button class="primary-btn mobile-btn">Scan & Assess</button>
+              </div>
+
+              <div class="phone-card">
+                <div class="action-list">
+                  <span>Recommended action</span>
+                  <strong>Freeze request + case escalation</strong>
+                </div>
+                <div class="action-list">
+                  <span>Next step</span>
+                  <strong>Notify local cyber cell</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
